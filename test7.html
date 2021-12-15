@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The David Times</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 20px;
+      }
+      div {
+        position: relative;
+        background-color: black;
+        width: 300px;
+        height: 300px;
+        font-size: 28px;
+      }
+      .green {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-color: teal;
+        opacity: 0.6;
+        height: 100px;
+        width: 100px;
+      }
+      #different {
+        top: 10px;
+        left: 200px;
+        position: fixed;
+        background-color: wheat;
+        width: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="green">green</div>
+    </div>
+    <div id="different"></div>
+  </body>
+</html>
