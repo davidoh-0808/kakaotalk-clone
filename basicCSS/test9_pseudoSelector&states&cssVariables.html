@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <style>
+      :root {
+        --main-color: rgb(255, 119, 78);
+        --default-border: 1px solid var(--main-color);
+      }
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        color: tomato;
+        background-color: rebeccapurple;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      div > span {
+        text-decoration: none;
+      }
+      div p span {
+        color: cyan;
+        font-size: larger;
+        text-decoration: underline;
+      }
+      p + span {
+        background-color: var(--main-color);
+        padding: 5px;
+        color: gray;
+        font-size: larger;
+        border-radius: 10px;
+      }
+      input:required {
+        border: var(--default-border);
+      }
+      input[placeholder~="name"] {
+        background-color: pink;
+      }
+      input[type="password"] {
+        background-color: thistle;
+      }
+      button:active {
+        background-color: blueviolet;
+      }
+      button:hover {
+        color: blue;
+      }
+      a:visited {
+        color: tomato;
+      }
+      form:focus-within {
+        border-color: seagreen;
+      }
+      p {
+        background-color: var(--main-color);
+      }
+      p::selection {
+        color: white;
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>hello</span>
+      <p>
+        test paragraph test paragraph test paragraph test paragraph
+        <span>span inside paragraph</span>
+      </p>
+      <span>span next to paragraph</span>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input required type="password" placeholder="password" />
+        <input type="submit" />
+      </form>
+      <button>A Button</button>
+      <a href="https://www.apple.com">Go to Apple</a>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        voluptates aperiam porro autem ipsam minima, tenetur dolores?
+        Perspiciatis, consectetur! Dolore similique et sint iste labore
+        cupiditate nihil dicta, reprehenderit ullam.
+      </p>
+    </div>
+  </body>
+</html>
