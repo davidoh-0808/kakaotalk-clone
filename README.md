@@ -6,4 +6,5 @@
 - For CSS svg icons, use Font Awesome:
   https://fontawesome.com/kits/e6f61c6027/use?welcome=yes
 
--
+- For quickly analyzing/getting color codes from reference websites:
+  https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp/related
