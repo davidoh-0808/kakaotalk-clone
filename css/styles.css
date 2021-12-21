@@ -43,8 +43,7 @@ body {
   border-color: var(--yellow);
 }
 #login-form input::placeholder {
-    text-align: center;
-}
+  text-align: center;
 }
 #login-form input[type="submit"] {
   border-radius: 15px;
