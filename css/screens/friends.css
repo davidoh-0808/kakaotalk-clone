@@ -7,3 +7,6 @@
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.4);
 }
+.user-component__column {
+  display: flex;
+}
