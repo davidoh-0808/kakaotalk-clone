@@ -28,3 +28,13 @@
   left: 20px;
   bottom: 20px;
 }
+.nav__notification2 {
+  background: pink;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+  left: 30px;
+  bottom: 25px;
+}
