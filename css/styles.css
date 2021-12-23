@@ -18,7 +18,9 @@ body {
   font-weight: bolder;
   background-color: #ffd1dc;
 }
-
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
 .welcome-header__title {
   display: flex;
   align-items: center;
