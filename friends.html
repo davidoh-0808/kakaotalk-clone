@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Apeach-Talk</title>
   </head>
+
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
@@ -40,21 +41,45 @@
       <i class="fas fa-chevron-right"></i>
     </a>
 
-    <div class="user-component">
-      <div class="user-component__column">
-        <img
-          src="https://logos-download.com/wp-content/uploads/2016/03/Starbucks_Logo_2011.png"
-          class="user-component__avatar"
-        />
-        <div class="user-component__text">
-          <h4 class="user-component__title">David</h4>
-          <h6 class="user-component__subtitle">
-            a simple man who loves programming
-          </h6>
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://logos-download.com/wp-content/uploads/2016/03/Starbucks_Logo_2011.png"
+            class="user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">David</h4>
+            <!-- <h6 class="user-component__subtitle">
+              a simple man who loves programming
+            </h6> -->
+          </div>
         </div>
       </div>
-      <div></div>
-    </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+      </div>
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://logos-download.com/wp-content/uploads/2016/03/Starbucks_Logo_2011.png"
+            class="user-component__avatar--sm"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              Channel
+            </h4>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span>3</span>
+          <i class="fas fa-chevron-right fa-xs"></i>
+        </div>
+      </div>
+    </main>
 
     <nav class="nav">
       <ul class="nav__list">
