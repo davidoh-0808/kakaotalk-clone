@@ -1,5 +1,7 @@
 :root {
   --pink: #e899ae;
+  --lightPink: #ffd1dc;
+  --boldPink: #faa0a0;
   --horizontal-space: 25px;
   --main-border: 1px solid rgba(0, 0, 0, 0.2);
   --grey: rgba(128, 128, 128, 0.5);
