@@ -1,4 +1,46 @@
 #chat-screen {
   /* background-color: #faa0a0; */
   background-color: var(--pink);
+  height: 1000vh;
+}
+#chat-screen .alt-header,
+#chat-screen .status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--pink);
+}
+#chat-screen .status-bar {
+  z-index: 2;
+}
+#chat-screen .alt-header {
+  top: 10px;
+  z-index: 1;
+}
+
+.main-chat {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-chat__timestamp {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: var(--boldPink);
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.message-row {
+}
+.message-row__content {
+}
+.message__author {
+}
+.message__info {
+}
+.message__bubble {
+}
+.message__time {
 }
