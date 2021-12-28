@@ -62,7 +62,7 @@
 }
 .message__bubble {
   font-size: 20px;
-  background-color: var(--boldPink);
+  background-color: var(--lightPink);
   padding: 8px 10px;
   border-radius: 15px;
   border-top-left-radius: 0px;
@@ -77,4 +77,55 @@
 }
 .message-row--own .message__info {
   flex-direction: row-reverse;
+}
+.reply {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--lightPink);
+  padding: 5px 25px;
+}
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  position: relative;
+  width: 90%;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -3px;
+  top: 2px;
+}
+.reply__column:last-child > i {
+  right: 40px;
+  top: 10px;
+}
+.reply__column button {
+  background-color: var(--bolderPink);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+.reply__column i {
+  opacity: 0.6;
+}
+.reply__column button {
+  opacity: 1;
+}
+.reply input {
+  padding: 15px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
 }
