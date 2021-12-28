@@ -100,7 +100,7 @@
 .reply__column:last-child button {
   position: absolute;
   right: -3px;
-  top: 2px;
+  top: 3px;
 }
 .reply__column:last-child > i {
   right: 40px;
@@ -124,7 +124,7 @@
   opacity: 1;
 }
 .reply input {
-  padding: 15px;
+  padding: 10px;
   width: 100%;
   border: var(--main-border);
   border-radius: 20px;
