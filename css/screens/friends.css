@@ -24,6 +24,16 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.4);
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 #splash-screen {
   background-color: var(--pink);
   position: absolute;
@@ -34,4 +44,7 @@
   justify-content: center;
   align-items: center;
   font-size: 150px;
+  animation: hideSplashScreen 2s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
