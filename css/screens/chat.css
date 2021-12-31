@@ -33,13 +33,35 @@
   font-size: 14px;
   margin-bottom: 25px;
 }
+@keyframes fadeIn-friend {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn-own {
+  from {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  animation: fadeIn-friend 1s linear;
 }
 .message-row--own {
   justify-content: flex-end;
+  animation: fadeIn-own 1s linear;
 }
 .message-row img {
   width: 50px;
