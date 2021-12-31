@@ -11,3 +11,17 @@
 .screen-header__icons span {
   margin-left: 20px;
 }
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cogs:hover {
+  animation: rotateCog 2s ease-in-out infinite;
+  animation-direction: alternate;
+}
