@@ -22,3 +22,9 @@
    background-color: #ffd1dc;
    text-decoration: none;
    }
+
+-Deploying static front web page via Github...
+
+1. on main branch, commit and push
+2. on gh-pages branch, update (pull) from main branch and push
+3. check gh-pages link for your repository
