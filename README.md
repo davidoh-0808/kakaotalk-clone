@@ -27,4 +27,5 @@
 
 1. on main branch, commit and push
 2. on gh-pages branch, update (pull) from main branch and push
+   <git checkout gh-pages; git merge main; git push;>
 3. check gh-pages link for your repository
