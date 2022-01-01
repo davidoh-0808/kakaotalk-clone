@@ -100,6 +100,10 @@
 .message-row--own .message__info {
   flex-direction: row-reverse;
 }
+
+.reply:focus-within {
+  transform: translateY(40px);
+}
 .reply {
   display: flex;
   justify-content: space-between;
@@ -110,13 +114,14 @@
   width: 100%;
   background-color: var(--lightPink);
   padding: 5px 25px;
+  transition: all 0.3s ease-in-out;
 }
 .reply .reply__column:first-child {
-  width: 10%;
+  width: 3%;
 }
 .reply .reply__column:last-child {
   position: relative;
-  width: 90%;
+  width: 97%;
 }
 .reply__column:last-child > i,
 .reply__column:last-child button {
@@ -150,4 +155,19 @@
   width: 100%;
   border: var(--main-border);
   border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.reply .reply__column:first-child,
+.reply .fa-kiss-beam,
+.reply button {
+  transition: opacity 0.5s ease-in-out;
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-kiss-beam,
+.reply:focus-within button {
+  opacity: 0;
+}
+.reply:focus-within input {
+  width: 96vw;
+  transform: translateX(-3%) translateY(-50px);
 }
